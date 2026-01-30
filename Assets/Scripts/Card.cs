@@ -4,7 +4,7 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     public CardType type;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,5 +32,5 @@ public enum CardType
 {
     Mingle, 
     Provoke,
-    Hunch
+    Accuse
 }
