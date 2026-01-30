@@ -26,5 +26,7 @@ public class NPC : MonoBehaviour
 
         Player.Instance.transform.DOMove(playerConversationPos.position, 0.2f);
         Player.Instance.PlayerMovement.CanMove = false;
+
+        CardSystem.Instance.StartConversation();
     }
 }
