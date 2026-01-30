@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.jaakkeli.fishydialog": {
-      "version": "https://github.com/jaakop/FishyDialog.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "7a40847b3e42a5c8e67935951b92524b9646da72"
-    },
     "com.unity.2d.animation": {
       "version": "10.2.1",
       "depth": 1,

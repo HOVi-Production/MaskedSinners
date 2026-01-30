@@ -18,6 +18,8 @@ public class CardSystem : MonoBehaviour
 
     [SerializeField] GameObject cardPrefab;
 
+    [SerializeField] NPC currentNPC;
+
 
     List<Card> hand = new();
 
@@ -33,8 +35,10 @@ public class CardSystem : MonoBehaviour
         
     }
 
-    public void StartConversation()
+    public void StartConversation(NPC npc)
     {
+        currentNPC = npc;
+
         DrawCard();
         StartCoroutine(WaitDrawCard());
         
@@ -51,6 +55,13 @@ public class CardSystem : MonoBehaviour
 
     private void DrawCard()
     {
+        var type = currentNPC.GetRandomCard();
+
+        if(type == null)
+        {
+            return;
+        }
+
         var card = Instantiate(cardPrefab, handContainer).GetComponent<Card>();
         card.transform.position = GetComponentInParent<Transform>().position;
         hand.Insert(hand.Count / 2, card);
