@@ -28,6 +28,7 @@ public class Interactable : MonoBehaviour
         }
         
         _interactIndicator.SetActive(true);
+        InteractController.Instance.SetActiveInteractable(this);
     }
 
     void OnTriggerExit2D(Collider2D collider)
@@ -38,10 +39,12 @@ public class Interactable : MonoBehaviour
         }
         
         _interactIndicator.SetActive(false);
+        InteractController.Instance.SetActiveInteractable(null);
     }
 
     public void Interact()
     {
         OnInteract.Invoke();
+        _interactIndicator.SetActive(false);
     }
 }
