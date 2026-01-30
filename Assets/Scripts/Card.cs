@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
+    public CardType type;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,4 +26,11 @@ public class Card : MonoBehaviour
     {
         transform.DOScale(1f, 0.1f);
     }
+}
+
+public enum CardType
+{
+    Mingle, 
+    Provoke,
+    Hunch
 }
