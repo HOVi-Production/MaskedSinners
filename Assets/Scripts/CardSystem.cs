@@ -22,6 +22,8 @@ public class CardSystem : MonoBehaviour
 
     [SerializeField] Color flashColor;
 
+    AudioSource audioSource;
+
     List<Card> hand = new();
 
     public bool CardCanBePlayed = false;
@@ -30,6 +32,7 @@ public class CardSystem : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -89,6 +92,8 @@ public class CardSystem : MonoBehaviour
         card.OnCardSelected.AddListener(OnCardSelected);
         hand.Insert(hand.Count / 2, card);
 
+        audioSource.PlayOneShot(audioSource.clip);
+
         RefreshCardPositions();
     }
 
@@ -123,6 +128,7 @@ public class CardSystem : MonoBehaviour
         }
 
         CardCanBePlayed = false;
+        audioSource.PlayOneShot(audioSource.clip);
         hand.Remove(card);
         RefreshCardPositions();
 

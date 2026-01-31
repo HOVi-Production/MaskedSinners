@@ -131,6 +131,9 @@ MonoBehaviour:
   playerConversationPos: {fileID: 7179257767103188408}
   dialogContainer: {fileID: 7854819864968836097}
   writer: {fileID: 6281140635926207363}
+  correctAnswersRequired: 0
+  challengesPassedText: 
+  challengesFailedText: 
   startChallenge:
     Line: What do you want?
     correctResponse: 0
@@ -178,7 +181,7 @@ Transform:
   m_GameObject: {fileID: 433320104478741645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8915, y: 0.26709998, z: 0}
+  m_LocalPosition: {x: 0.78, y: 0.26709998, z: 0}
   m_LocalScale: {x: 0.46938, y: 0.46938, z: 0.46938}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -534,7 +537,7 @@ Transform:
   m_GameObject: {fileID: 5272628676384074588}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.94159985, y: 0.2155, z: 0}
+  m_LocalPosition: {x: -0.839, y: 0.2155, z: 0}
   m_LocalScale: {x: 0.46938, y: 0.46938, z: 0.46938}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -998,7 +1001,7 @@ Transform:
   m_GameObject: {fileID: 7968100485245992128}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.05, y: 0.83, z: 0}
+  m_LocalPosition: {x: -0.124, y: 0.774, z: 0}
   m_LocalScale: {x: 0.46938, y: 0.46938, z: 0.46938}
   m_ConstrainProportionsScale: 1
   m_Children: []
