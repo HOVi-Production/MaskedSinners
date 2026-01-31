@@ -134,11 +134,23 @@ MonoBehaviour:
   startChallenge:
     Line: What do you want?
     correctResponse: 0
-    correctResponseText: 
-    incorrectResponseText: 
+    correctResponseText: myes
+    incorrectResponseText: no
     asked: 0
     passed: 0
-  challenges: []
+  challenges:
+  - Line: 2nd question
+    correctResponse: 1
+    correctResponseText: myes
+    incorrectResponseText: no
+    asked: 0
+    passed: 0
+  - Line: 3rd question
+    correctResponse: 0
+    correctResponseText: myes
+    incorrectResponseText: no
+    asked: 0
+    passed: 0
   allResponses: 000000000000000000000000000000000000000000000000
 --- !u!1 &433320104478741645
 GameObject:

@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.37025982, g: 0.43741652, b: 0.6075471, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -375,7 +375,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.078431375, g: 0.078431375, b: 0.078431375, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1016,46 +1016,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.37
       objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: challenges.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: challenges.Array.data[0].Line
-      value: 2nd question
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: challenges.Array.data[1].Line
-      value: 3rd question
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: startChallenge.correctResponseText
-      value: myes
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: startChallenge.incorrectResponseText
-      value: no
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: challenges.Array.data[0].correctResponse
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: challenges.Array.data[0].correctResponseText
-      value: myes
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: challenges.Array.data[1].correctResponseText
-      value: myes
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: challenges.Array.data[0].incorrectResponseText
-      value: no
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
-      propertyPath: challenges.Array.data[1].incorrectResponseText
-      value: no
-      objectReference: {fileID: 0}
     - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.01
@@ -1363,22 +1323,6 @@ PrefabInstance:
     - target: {fileID: 392625075405358753, guid: c89b0a0258887954ca4febff5d190f53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1308226747041835527, guid: c89b0a0258887954ca4febff5d190f53, type: 3}
-      propertyPath: flashColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1308226747041835527, guid: c89b0a0258887954ca4febff5d190f53, type: 3}
-      propertyPath: flashColor.b
-      value: 0.47058824
-      objectReference: {fileID: 0}
-    - target: {fileID: 1308226747041835527, guid: c89b0a0258887954ca4febff5d190f53, type: 3}
-      propertyPath: flashColor.g
-      value: 0.47058824
-      objectReference: {fileID: 0}
-    - target: {fileID: 1308226747041835527, guid: c89b0a0258887954ca4febff5d190f53, type: 3}
-      propertyPath: flashColor.r
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2965816348779304757, guid: c89b0a0258887954ca4febff5d190f53, type: 3}
       propertyPath: m_Name

@@ -188,3 +188,6 @@ MonoBehaviour:
   widthAmplitude: 0.3
   maxRotation: 35
   cardPrefab: {fileID: 6947053009834327292, guid: ef1a2984b49bb1442b5ec9505c2e2d8d, type: 3}
+  currentNPC: {fileID: 0}
+  flashColor: {r: 1, g: 0.47058824, b: 0.47058824, a: 1}
+  CardCanBePlayed: 0
