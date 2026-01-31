@@ -405,7 +405,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 6.108971
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -430,7 +430,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000026214344, y: 0.000000011793049, z: -3.0914704e-16, w: 1}
-  m_LocalPosition: {x: -0.3, y: 3.96, z: -12}
+  m_LocalPosition: {x: -0.3, y: 2.05, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -557,7 +557,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 6.108971
+    OrthographicSize: 8
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -584,7 +584,7 @@ Transform:
   m_GameObject: {fileID: 614353882}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000026214344, y: 0.000000011793049, z: -1.8447912e-16, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.9599999, z: -12}
+  m_LocalPosition: {x: -0.3, y: -0.95000005, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -710,7 +710,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 692956395928193737, guid: 7613a8e350ed11949bd6d3237df0148e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 692956395928193737, guid: 7613a8e350ed11949bd6d3237df0148e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -775,7 +775,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: de23f19525940314eb6a91cb10922131, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.015
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -869,7 +869,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 692956395928193737, guid: 7613a8e350ed11949bd6d3237df0148e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 692956395928193737, guid: 7613a8e350ed11949bd6d3237df0148e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1100,7 +1100,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 4189ea88525f3c54bad1198fedb8d228, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1233,12 +1233,24 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.01
       objectReference: {fileID: 0}
     - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.37
+      value: -1.54
       objectReference: {fileID: 0}
     - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1272,9 +1284,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8659620810534671614, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845430375668769416, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: Lens.OrthographicSize
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1350,13 +1370,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2588804394420078626, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
+      propertyPath: _movementSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853275387301516840, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853275387301516840, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853275387301516840, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7853275387301516840, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7853275387301516840, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.55999994
+      value: -1.35
       objectReference: {fileID: 0}
     - target: {fileID: 7853275387301516840, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1389,6 +1425,10 @@ PrefabInstance:
     - target: {fileID: 7853275387301516840, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853275387301516840, guid: 2e9289d932353c04f9c88eda2977eef1, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
