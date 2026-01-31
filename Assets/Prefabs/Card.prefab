@@ -170,9 +170,9 @@ MonoBehaviour:
   OnCardSelected:
     m_PersistentCalls:
       m_Calls: []
-  mingleSprite: {fileID: -621996894108276888, guid: 2154deea13291ce429a0202b526edccd, type: 3}
-  accuseSprite: {fileID: -65167762338206206, guid: 2154deea13291ce429a0202b526edccd, type: 3}
-  provokeSprite: {fileID: 5014264761726934835, guid: 2154deea13291ce429a0202b526edccd, type: 3}
+  mingleSprite: {fileID: -2575549799971032951, guid: f4015788e47395548b9c9c4559a898c8, type: 3}
+  accuseSprite: {fileID: -2518732529914428011, guid: f4015788e47395548b9c9c4559a898c8, type: 3}
+  provokeSprite: {fileID: 8595410161736593869, guid: f4015788e47395548b9c9c4559a898c8, type: 3}
 --- !u!114 &4185248555933279322
 MonoBehaviour:
   m_ObjectHideFlags: 0
