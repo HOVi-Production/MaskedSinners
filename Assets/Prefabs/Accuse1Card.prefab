@@ -83,6 +83,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 65509652260463451, guid: ef1a2984b49bb1442b5ec9505c2e2d8d, type: 3}
+      propertyPath: accuseSprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 65509652260463451, guid: ef1a2984b49bb1442b5ec9505c2e2d8d, type: 3}
+      propertyPath: mingleSprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 65509652260463451, guid: ef1a2984b49bb1442b5ec9505c2e2d8d, type: 3}
+      propertyPath: provokeSprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6947053009834327292, guid: ef1a2984b49bb1442b5ec9505c2e2d8d, type: 3}
       propertyPath: m_Name
       value: Accuse1Card
