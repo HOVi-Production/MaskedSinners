@@ -236,25 +236,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1467c586c0cb34745ae57ef8207ce59b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutsceneText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
-    leo sit amet lorem dignissim eleifend. Duis quis erat tincidunt, imperdiet orci
-    sed, aliquet lorem. Integer in nibh ullamcorper, tempor arcu et, scelerisque
-    enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-    ac turpis egestas. Nam id ipsum nisi. Etiam lectus elit, pellentesque sed volutpat
-    vel, laoreet quis neque. Aenean aliquam purus orci, vitae eleifend ipsum scelerisque
-    at. Ut porttitor aliquam lobortis. Sed in urna mi. Morbi sit amet tincidunt diam,
-    quis condimentum est. Morbi ultricies justo ac lectus dictum vulputate. Vestibulum
-    ipsum lectus, aliquam vitae efficitur sit amet, fermentum eget sapien. Maecenas
-    porta justo eu ex dignissim aliquet.
+  cutsceneText: '[YOU] have deemed yourself as good as an investigator as an hunter.
+    That pesky thief Reyes will receive a severe punishment for their actions...
+    But the celebration shall continue!
 
+    
 
+    [YOU] are lifted, and everyone
+    is chanting your name
 
-    Pellentesque at bibendum tellus.
-    In tortor quam, mattis eget risus nec, pulvinar lobortis leo. Phasellus quis
-    nunc et nibh viverra finibus sit amet non neque. Nulla nunc nibh, convallis at
-    nulla in, tristique ultrices dui. Vestibulum quis imperdiet turpis. Fusce convallis
-    condimentum lectus, non scelerisque odio consectetur sodales. Quisque condimentum
-    urna quis felis faucibus posuere sed sed mi.'
+    
+
+    Truly an epic victory royale!'
   writer: {fileID: 708942263}
   button: {fileID: 2067294792}
   sceneIndexOfNextScene: 0

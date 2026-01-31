@@ -236,25 +236,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1467c586c0cb34745ae57ef8207ce59b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutsceneText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
-    leo sit amet lorem dignissim eleifend. Duis quis erat tincidunt, imperdiet orci
-    sed, aliquet lorem. Integer in nibh ullamcorper, tempor arcu et, scelerisque
-    enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-    ac turpis egestas. Nam id ipsum nisi. Etiam lectus elit, pellentesque sed volutpat
-    vel, laoreet quis neque. Aenean aliquam purus orci, vitae eleifend ipsum scelerisque
-    at. Ut porttitor aliquam lobortis. Sed in urna mi. Morbi sit amet tincidunt diam,
-    quis condimentum est. Morbi ultricies justo ac lectus dictum vulputate. Vestibulum
-    ipsum lectus, aliquam vitae efficitur sit amet, fermentum eget sapien. Maecenas
-    porta justo eu ex dignissim aliquet.
-
-
-
-    Pellentesque at bibendum tellus.
-    In tortor quam, mattis eget risus nec, pulvinar lobortis leo. Phasellus quis
-    nunc et nibh viverra finibus sit amet non neque. Nulla nunc nibh, convallis at
-    nulla in, tristique ultrices dui. Vestibulum quis imperdiet turpis. Fusce convallis
-    condimentum lectus, non scelerisque odio consectetur sodales. Quisque condimentum
-    urna quis felis faucibus posuere sed sed mi.'
+  cutsceneText: "After a successful hunt a mighty bear is hooked to a tree to celebrate
+    the king of the forest! A group of hunters have gathered to celebrate the fallen
+    bear, as well as the person who managed to tame the beast in front of the death's
+    office. The person who took out the bear was [YOU]! \r\n\r\n[YOU] hear cheers
+    and envious whispers. The hunter guild is rather competitive, and such a hunting
+    trophy is extremely desirable. It is going to take a while to be dethroned after
+    the take down of this mighty beast...\r\n\r\nGunshot\r\nGunshot\r\n\r\nEveryone
+    turns their gaze to see where the gunshots came from. But on the meanwhile..."
   writer: {fileID: 708942263}
   button: {fileID: 2067294792}
   sceneIndexOfNextScene: 2

@@ -236,25 +236,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1467c586c0cb34745ae57ef8207ce59b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutsceneText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
-    leo sit amet lorem dignissim eleifend. Duis quis erat tincidunt, imperdiet orci
-    sed, aliquet lorem. Integer in nibh ullamcorper, tempor arcu et, scelerisque
-    enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-    ac turpis egestas. Nam id ipsum nisi. Etiam lectus elit, pellentesque sed volutpat
-    vel, laoreet quis neque. Aenean aliquam purus orci, vitae eleifend ipsum scelerisque
-    at. Ut porttitor aliquam lobortis. Sed in urna mi. Morbi sit amet tincidunt diam,
-    quis condimentum est. Morbi ultricies justo ac lectus dictum vulputate. Vestibulum
-    ipsum lectus, aliquam vitae efficitur sit amet, fermentum eget sapien. Maecenas
-    porta justo eu ex dignissim aliquet.
-
-
-
-    Pellentesque at bibendum tellus.
-    In tortor quam, mattis eget risus nec, pulvinar lobortis leo. Phasellus quis
-    nunc et nibh viverra finibus sit amet non neque. Nulla nunc nibh, convallis at
-    nulla in, tristique ultrices dui. Vestibulum quis imperdiet turpis. Fusce convallis
-    condimentum lectus, non scelerisque odio consectetur sodales. Quisque condimentum
-    urna quis felis faucibus posuere sed sed mi.'
+  cutsceneText: "WHAT!!! The bear is missing!\r\n\r\nThere is an imposter among us...
+    \r\n\r\nSomeone couldn't hold their envy, and they submitted to their desires
+    of committing theft.  The magnificent bear is on the run with someone. It's time
+    to head inside to investigate this case. \r\n\r\n[YOU] and the others move inside
+    the building..."
   writer: {fileID: 708942263}
   button: {fileID: 2067294792}
   sceneIndexOfNextScene: 3
