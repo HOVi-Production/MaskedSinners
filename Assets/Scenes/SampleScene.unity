@@ -2511,13 +2511,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6788776760556188901, guid: 2154deea13291ce429a0202b526edccd, type: 3}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.Line
+      value: Wonder when I can get out of here
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
-      value: Good luck on your investigation. Press [Space] to continue..
+      value: Good luck on your investigation.
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesPassedText
       value: Why would I even want that bear of yours? Are you really that desperate
-        for someone to blame?  Press [Space] to continue..
+        for someone to blame?
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.size
@@ -2532,24 +2536,94 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[1]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[2]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[3]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[4]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].Line
+      value: I find all of this so useless
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].Line
+      value: I don't think you are making too much progress with all this talking
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].Line
-      value: 3rd question
+      value: I might just leave
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].Line
       value: 3rd question
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.correctResponse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.correctResponseText
+      value: I know, you have to find your bear. But its so boring.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.incorrectResponseText
+      value: Strange, one could think you would want to get your bear before leaving
+        here
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].correctResponse
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].correctResponse
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[2].correctResponse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].correctResponseText
+      value: Oh yes, I so much want to escape from here... No I just want to go to
+        sleep
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].correctResponseText
+      value: I'm hiding nothing, I'm just waiting to leave
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].correctResponseText
-      value: myes
+      value: Allright, I'll stay a minute longer
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].correctResponseText
       value: myes
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].incorrectResponseText
+      value: You too?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].incorrectResponseText
+      value: That's not helping
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].incorrectResponseText
-      value: no
+      value: You really aren't a convincing one are you?
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].incorrectResponseText
@@ -3402,12 +3476,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
-      value: I really don't think you got this unfortunately. Press [Space] to continue..
+      value: I really don't think you got this unfortunately.
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesPassedText
       value: Barrett is truly a spirit of evil. If anyone would do such a sin here
-        I'm sure it would be him! Press [Space] to continue..
+        I'm sure it would be him!
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.size
