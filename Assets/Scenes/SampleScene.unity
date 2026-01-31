@@ -643,13 +643,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1377389793342493182, guid: 2154deea13291ce429a0202b526edccd, type: 3}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.Line
+      value: Who dunnit? I bet you know
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
-      value: You really don't get it do you. Press [Space] to continue..
+      value: You really don't get it do you.
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesPassedText
-      value: If you are looking for someone to blame I swear that Micah has always
-        been after that bear!  Press [Space] to continue..
+      value: 'If you are looking for someone to blame I swear that Micah has always
+        been after that bear! '
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.size
@@ -664,8 +668,32 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[4]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[5]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[6]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[7]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].Line
       value: 3rd question
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.correctResponseText
+      value: Oohhh, that's juicy isn't it
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.incorrectResponseText
+      value: Really? Nothing? That's dissapointing
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].correctResponseText
