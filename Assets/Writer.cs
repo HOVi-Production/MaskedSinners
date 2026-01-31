@@ -9,6 +9,13 @@ public class Writer : MonoBehaviour
 
     public UnityEvent OnWritingDone = new();
  
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void Write(string text)
     {
         StopAllCoroutines();
@@ -22,6 +29,9 @@ public class Writer : MonoBehaviour
         foreach(var letter in text)
         {
             textField.text += letter;
+
+            audioSource.pitch = Mathf.Lerp(0.9f, 1.1f, UnityEngine.Random.Range(0f, 1f));
+            audioSource.PlayOneShot(audioSource.clip);
 
             if(letter !=  ' ')
             {
