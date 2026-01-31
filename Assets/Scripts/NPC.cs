@@ -14,6 +14,10 @@ public class NPC : MonoBehaviour
     [SerializeField] private Writer writer;
     public Writer Writer => writer;
 
+    [SerializeField] int correctAnswersRequired;
+    [SerializeField] string challengesPassedText;
+    [SerializeField] string challengesFailedText;
+
     [SerializeField] private Challenge startChallenge;
     [SerializeField] private List<Challenge> challenges;
     [SerializeField] private List<CardType> allResponses = new();
@@ -23,6 +27,7 @@ public class NPC : MonoBehaviour
     private Challenge currentChallenge;
 
     bool waitingForNextLine = false;
+    bool finished = false;
 
     private List<CardType> currentCards = new();
     public List<CardType> CurrentCards => currentCards;
@@ -42,6 +47,10 @@ public class NPC : MonoBehaviour
             if(waitingForNextLine)
             {
                 StartNextChallenge();
+            }
+            else if(finished)
+            {
+                ExitConverstaion();
             }
         }
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -68,14 +77,19 @@ public class NPC : MonoBehaviour
         }
         else
         {
-            if(challenges.Any(c => !c.asked))
+            if(challenges.Count(c => c.passed) + (startChallenge.passed ? 1 : 0) >= correctAnswersRequired)
+            {
+                writer.Write(challengesPassedText);
+                finished = true;
+            }
+            else if(challenges.Any(c => !c.asked))
             {
                 StartNextChallenge();
             }
             else
             {   
-                var challenge = challenges[challenges.Count - 1];
-                writer.Write(challenge.passed ? challenge.correctResponseText : challenge.incorrectResponseText);
+                writer.Write(challengesFailedText);
+                finished = true;
             }
         }
 
@@ -95,11 +109,21 @@ public class NPC : MonoBehaviour
 
     private void StartNextChallenge()
     {
+        waitingForNextLine = false;
+        
+        if(challenges.Count(c => c.passed) + (startChallenge.passed ? 1 : 0) >= correctAnswersRequired)
+        {
+            writer.Write(challengesPassedText);
+            finished = true;
+            return;
+        }
+
         currentChallenge = challenges.FirstOrDefault(c => !c.asked);
 
         if(currentChallenge == null)
         {
-            ExitConverstaion();
+            writer.Write(challengesFailedText);
+            finished = true;
             return;
         }
 
