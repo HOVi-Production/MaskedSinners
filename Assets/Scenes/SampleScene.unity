@@ -2241,13 +2241,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
-      value: ' I can''t trust any one here. All of you are out to get me! Press [Space]
-        to continue..'
+      value: ' I can''t trust any one here. All of you are out to get me!'
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesPassedText
-      value: One of the shadows in the hallways looked like Barret to me.  Press
-        [Space] to continue..
+      value: 'One of the shadows in the hallways looked like Barret to me. '
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.size
