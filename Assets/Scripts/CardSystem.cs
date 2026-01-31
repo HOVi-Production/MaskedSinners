@@ -29,6 +29,8 @@ public class CardSystem : MonoBehaviour
 
     public bool CardCanBePlayed = false;
 
+    public int handSize => hand.Count;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
