@@ -1014,7 +1014,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304901635481107149, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0
+      value: -0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].Line
+      value: 2nd question
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].Line
+      value: 3rd question
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.correctResponseText
+      value: myes
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.incorrectResponseText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].correctResponse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].correctResponseText
+      value: myes
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].correctResponseText
+      value: myes
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].incorrectResponseText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].incorrectResponseText
+      value: no
       objectReference: {fileID: 0}
     - target: {fileID: 6135630451359458920, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_LocalPosition.x

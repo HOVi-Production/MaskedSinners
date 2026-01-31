@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using DG.Tweening;
 using Unity.Cinemachine;
@@ -18,6 +19,14 @@ public class NPC : MonoBehaviour
     [SerializeField] private List<CardType> allResponses = new();
 
     private List<CardType> remainingResponses = new();
+
+    private Challenge currentChallenge;
+
+    bool waitingForNextLine = false;
+
+    private List<CardType> currentCards = new();
+    public List<CardType> CurrentCards => currentCards;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +37,17 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(waitingForNextLine)
+            {
+                StartNextChallenge();
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitConverstaion();
+        }
     }
 
     public void StartConversation()
@@ -43,20 +62,42 @@ public class NPC : MonoBehaviour
         if(!startChallenge.asked)
         {
             writer.Write(startChallenge.Line);
-            startChallenge.asked = true;
+            currentChallenge = startChallenge;
+            writer.OnWritingDone.AddListener(OnWritingDone);
         }
         else
         {
-            writer.Write(challenges.First(c => !c.asked).Line);
+            StartNextChallenge();
         }
 
-        writer.OnWritingDone.AddListener(OnWritingDone);
+        CardSystem.Instance.StartConversation(this);
+
     }
 
     private void OnWritingDone()
     {
         writer.OnWritingDone.RemoveListener(OnWritingDone);
-        CardSystem.Instance.StartConversation(this);
+
+        if(currentChallenge.asked)
+        {
+            return;
+        }
+    }
+
+    private void StartNextChallenge()
+    {
+        currentChallenge = challenges.FirstOrDefault(c => !c.asked);
+        writer.Write(currentChallenge.Line);
+        writer.OnWritingDone.AddListener(OnWritingDone);
+        waitingForNextLine = false;
+    }
+
+    private void ExitConverstaion()
+    {
+        camera.Priority = 0;
+        Player.Instance.PlayerMovement.CanMove = true;
+        dialogContainer.SetActive(false);
+        CardSystem.Instance.ClearHand();
     }
 
     public CardType? GetRandomCard()
@@ -69,17 +110,24 @@ public class NPC : MonoBehaviour
         var index = UnityEngine.Random.Range(0, remainingResponses.Count);
         var card = remainingResponses[index];
         remainingResponses.RemoveAt(index);
+        currentCards.Add(card);
         return card;
     }
 
     public void OnCardSelected(CardType type)
     {
-        
+        currentChallenge.asked = true;
+        currentChallenge.passed = currentChallenge.correctResponse == type;
+
+        writer.Write(currentChallenge.passed ? currentChallenge.correctResponseText : currentChallenge.incorrectResponseText);
+        writer.OnWritingDone.AddListener(OnWritingDone);
+        waitingForNextLine = true;
+        currentCards.Remove(type);
     }
 }
 
 [Serializable]
-public struct Challenge
+public class Challenge
 {
     public string Line;
     public CardType correctResponse;

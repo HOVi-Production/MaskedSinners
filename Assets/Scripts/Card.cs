@@ -1,9 +1,12 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Card : MonoBehaviour
 {
     public CardType type;
+
+    public UnityEvent<Card> OnCardSelected = new();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +28,11 @@ public class Card : MonoBehaviour
     public void OnMouseExit()
     {
         transform.DOScale(1f, 0.1f);
+    }
+
+    public void OMouseDown()
+    {
+        OnCardSelected.Invoke(this);
     }
 }
 

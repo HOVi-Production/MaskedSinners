@@ -139,7 +139,7 @@ MonoBehaviour:
     asked: 0
     passed: 0
   challenges: []
-  allResponses: 000000000000000000000000
+  allResponses: 000000000000000000000000000000000000000000000000
 --- !u!1 &433320104478741645
 GameObject:
   m_ObjectHideFlags: 0

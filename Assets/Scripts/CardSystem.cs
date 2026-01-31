@@ -39,23 +39,41 @@ public class CardSystem : MonoBehaviour
     {
         currentNPC = npc;
 
-        DrawCard();
-        StartCoroutine(WaitDrawCard());
-        
-        IEnumerator WaitDrawCard()
+        if(currentNPC.CurrentCards.Count != 0)
         {
-            yield return new WaitForSeconds(0.5f);
-            DrawCard();
-            yield return new WaitForSeconds(0.5f);
-            DrawCard();
+            DrawCard(currentNPC.CurrentCards[0]);
+            for(int i = 1; i < currentNPC.CurrentCards.Count; i++)
+            {
+                StartCoroutine(WaitDrawCard(i * 0.5f, currentNPC.CurrentCards[i]));
+            }
+            return;
+        }
+
+        DrawCard();
+        StartCoroutine(WaitDrawCard(0.5f));
+        StartCoroutine(WaitDrawCard(1f));
+        
+        IEnumerator WaitDrawCard(float wait, CardType? type = null)
+        {
+            yield return new WaitForSeconds(wait);
+            DrawCard(type);
         }
 
         
     }
 
-    private void DrawCard()
+    public void ClearHand()
     {
-        var type = currentNPC.GetRandomCard();
+        for(int i = 0; i < hand.Count; i++)
+        {
+            Destroy(hand[i].gameObject);
+        }
+        hand.Clear();
+    }
+
+    private void DrawCard(CardType? cardType = null)
+    {
+        var type = cardType ?? currentNPC.GetRandomCard();
 
         if(type == null)
         {
@@ -63,13 +81,11 @@ public class CardSystem : MonoBehaviour
         }
 
         var card = Instantiate(cardPrefab, handContainer).GetComponent<Card>();
-        card.transform.position = GetComponentInParent<Transform>().position;
+        card.transform.position = new Vector3(GetComponentInParent<RectTransform>().position.x, GetComponentInParent<RectTransform>().offsetMin.y, 0);
+        card.OnCardSelected.AddListener(OnCardSelected);
         hand.Insert(hand.Count / 2, card);
 
-        for (int i = 0; i < hand.Count; i++)
-        {
-            MoveCard(i, hand[i].transform);
-        }
+        RefreshCardPositions();
     }
 
     private void MoveCard(int index, Transform cardTransform)
@@ -80,4 +96,34 @@ public class CardSystem : MonoBehaviour
         cardTransform.DOLocalMove(new Vector2(xPos * widthAmplitude, yPos * curveAmplitude + handContainer.transform.position.y), 0.2f);
         cardTransform.DORotate(new Vector3 (0,0,Mathf.Lerp(maxRotation, -maxRotation, ratio)), 0.2f);
     }
+
+    private void RefreshCardPositions()
+    {
+        for (int i = 0; i < hand.Count; i++)
+        {
+            MoveCard(i, hand[i].transform);
+        }
+    }
+
+    private void OnCardSelected(Card card)
+    {
+        hand.Remove(card);
+        RefreshCardPositions();
+
+        card.transform.DORotate(Vector3.zero, 0.1f);
+
+        var sequence = DOTween.Sequence();
+        sequence.Append(card.transform.DOMove(GetComponentInParent<Transform>().position, 0.2f));
+        sequence.AppendInterval(0.5f);
+        sequence.Append(card.transform.DOScale(2f, 0.1f));
+        sequence.OnComplete(() =>
+        {
+            currentNPC.OnCardSelected(card.type);
+            Destroy(card.gameObject);
+            DrawCard();
+        });
+        sequence.Play();
+    }
+
+
 }
