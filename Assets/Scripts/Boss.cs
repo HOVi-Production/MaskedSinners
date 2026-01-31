@@ -37,6 +37,21 @@ public class Boss : MonoBehaviour
             CardSystem.Instance.ClearHand();
         }
     }
+
+    public void SetAccuse1()
+    {
+        canAccuse1 = true;
+    }
+
+    public void SetAccuse2()
+    {
+        canAccuse2 = true;
+    }
+
+    public void SetAccuse3()
+    {
+        canAccuse3 = true;
+    }
     
     public void StartConversation()
     {
