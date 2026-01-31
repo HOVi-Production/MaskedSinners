@@ -5,6 +5,7 @@ using System.Linq;
 using DG.Tweening;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NPC : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class NPC : MonoBehaviour
     [SerializeField] int correctAnswersRequired;
     [SerializeField] string challengesPassedText;
     [SerializeField] string challengesFailedText;
+
+    public UnityEvent OnChallengePassed = new();
 
     [SerializeField] private Challenge startChallenge;
     [SerializeField] private List<Challenge> challenges;
@@ -79,6 +82,7 @@ public class NPC : MonoBehaviour
         {
             if(challenges.Count(c => c.passed) + (startChallenge.passed ? 1 : 0) >= correctAnswersRequired)
             {
+                OnChallengePassed.Invoke();
                 writer.Write(challengesPassedText);
                 finished = true;
             }
@@ -108,6 +112,7 @@ public class NPC : MonoBehaviour
 
         if(challenges.Count(c => c.passed) + (startChallenge.passed ? 1 : 0) >= correctAnswersRequired)
         {
+            OnChallengePassed.Invoke();
             writer.Write(challengesPassedText);
             finished = true;
             return;

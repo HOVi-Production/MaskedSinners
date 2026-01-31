@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CardSystem : MonoBehaviour
 {
@@ -76,6 +77,19 @@ public class CardSystem : MonoBehaviour
             Destroy(hand[i].gameObject);
         }
         hand.Clear();
+    }
+
+    public void AddCardToHand<T>(GameObject cardPrefabToUse, UnityAction<T> callback) where T : Card
+    {
+        var card = Instantiate(cardPrefabToUse, handContainer).GetComponent<T>();
+        card.transform.position = new Vector3(GetComponentInParent<RectTransform>().position.x, GetComponentInParent<RectTransform>().offsetMin.y, 0);
+        card.OnCardSelected.AddListener((_) => callback.Invoke(card));
+        card.SetImage();
+        hand.Insert(hand.Count / 2, card);
+
+        audioSource.PlayOneShot(audioSource.clip);
+
+        RefreshCardPositions();
     }
 
     private void DrawCard(CardType? cardType = null)
