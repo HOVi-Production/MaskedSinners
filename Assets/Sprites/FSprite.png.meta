@@ -103,10 +103,10 @@ TextureImporter:
       name: FSprite_0
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 56
-        width: 539
-        height: 424
+        x: 79
+        y: 555
+        width: 535
+        height: 422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,11 +121,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: FSprite_1
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 289
+        width: 527
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c078ae82391b2e4bbed450a86957ddf
+      internalID: -1711606080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FSprite_2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 136
+        width: 213
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c48826d5a299d40a22c9d3d1a42334
+      internalID: 1492522225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4a281915db62b4649831983c52a837c0
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +180,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       FSprite_0: 7335279703731790391
+      FSprite_1: -1711606080
+      FSprite_2: 1492522225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
