@@ -287,7 +287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -592,7 +592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -790,7 +790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1710,7 +1710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2186,7 +2186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2460,7 +2460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2654,7 +2654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2856,7 +2856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3346,7 +3346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742251868520632876, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.6388
+      value: -0.73880005
       objectReference: {fileID: 0}
     - target: {fileID: 1746962628085117631, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3397,6 +3397,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -621996894108276888, guid: 2154deea13291ce429a0202b526edccd, type: 3}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.Line
+      value: That's truly unfortunate that the bear of yours has gone missing
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
       value: I really don't think you got this unfortunately. Press [Space] to continue..
       objectReference: {fileID: 0}
@@ -3419,11 +3423,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: 'allResponses.Array.data[1]'
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: 'allResponses.Array.data[2]'
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[3]'
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: 'allResponses.Array.data[4]'
@@ -3442,24 +3450,64 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].Line
+      value: There really doesn't seem to be a place to hide it easily
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].Line
+      value: I do believe that some of the group members could be it
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].Line
-      value: 3rd question
+      value: Do you have any leads yet?
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].Line
       value: 3rd question
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.correctResponseText
+      value: Do you have any hunches where it might've gone?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.incorrectResponseText
+      value: I really don't know what you mean there
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].correctResponse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].correctResponse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].correctResponseText
+      value: It must be outside the cabin somewhere
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].correctResponseText
+      value: I don't know if I should say
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].correctResponseText
-      value: myes
+      value: I believe that you will be able to find the culprit
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].correctResponseText
       value: myes
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].incorrectResponseText
+      value: Why would you think the bear fit inside here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].incorrectResponseText
+      value: Of course not me!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].incorrectResponseText
-      value: no
+      value: I don't have much myself to give you
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].incorrectResponseText
