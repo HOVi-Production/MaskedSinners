@@ -1,6 +1,7 @@
 using DG.Tweening;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -72,15 +73,15 @@ public class Boss : MonoBehaviour
 
         if(canAccuse1)
         {
-            CardSystem.Instance.AddCardToHand<Card>(accuse1Prefab, (_) => {});
+            CardSystem.Instance.AddCardToHand<Card>(accuse1Prefab, (_) => {SceneManager.LoadScene(5);});
         }
         if(canAccuse2)
         {
-            CardSystem.Instance.AddCardToHand<Card>(accuse2Prefab, (_) => {});
+            CardSystem.Instance.AddCardToHand<Card>(accuse2Prefab, (_) => {SceneManager.LoadScene(4);});
         }
         if(canAccuse3)
         {
-            CardSystem.Instance.AddCardToHand<Card>(accuse3Prefab, (_) => {});
+            CardSystem.Instance.AddCardToHand<Card>(accuse3Prefab, (_) => {SceneManager.LoadScene(5);});
         }
     }
 
