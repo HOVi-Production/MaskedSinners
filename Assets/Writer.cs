@@ -11,6 +11,7 @@ public class Writer : MonoBehaviour
  
     public void Write(string text)
     {
+        StopAllCoroutines();
         StartCoroutine(WritingCoroutine(text));
     }
 

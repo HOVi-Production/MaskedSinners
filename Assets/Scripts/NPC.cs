@@ -64,10 +64,19 @@ public class NPC : MonoBehaviour
             writer.Write(startChallenge.Line);
             currentChallenge = startChallenge;
             writer.OnWritingDone.AddListener(OnWritingDone);
+            CardSystem.Instance.CardCanBePlayed = true;
         }
         else
         {
-            StartNextChallenge();
+            if(challenges.Any(c => !c.asked))
+            {
+                StartNextChallenge();
+            }
+            else
+            {   
+                var challenge = challenges[challenges.Count - 1];
+                writer.Write(challenge.passed ? challenge.correctResponseText : challenge.incorrectResponseText);
+            }
         }
 
         CardSystem.Instance.StartConversation(this);
@@ -87,7 +96,15 @@ public class NPC : MonoBehaviour
     private void StartNextChallenge()
     {
         currentChallenge = challenges.FirstOrDefault(c => !c.asked);
+
+        if(currentChallenge == null)
+        {
+            ExitConverstaion();
+            return;
+        }
+
         writer.Write(currentChallenge.Line);
+        CardSystem.Instance.CardCanBePlayed = true;
         writer.OnWritingDone.AddListener(OnWritingDone);
         waitingForNextLine = false;
     }

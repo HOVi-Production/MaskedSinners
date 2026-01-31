@@ -20,8 +20,11 @@ public class CardSystem : MonoBehaviour
 
     [SerializeField] NPC currentNPC;
 
+    [SerializeField] Color flashColor;
 
     List<Card> hand = new();
+
+    public bool CardCanBePlayed = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -64,6 +67,7 @@ public class CardSystem : MonoBehaviour
 
     public void ClearHand()
     {
+        StopAllCoroutines();
         for(int i = 0; i < hand.Count; i++)
         {
             Destroy(hand[i].gameObject);
@@ -107,6 +111,18 @@ public class CardSystem : MonoBehaviour
 
     private void OnCardSelected(Card card)
     {
+        if(!CardCanBePlayed)
+        {
+            var sprite = card.GetComponent<UnityEngine.UI.Image>();
+            
+            var flash = DOTween.Sequence();
+            flash.Append(sprite.DOColor(flashColor, 0.1f));
+            flash.Append(sprite.DOColor(Color.white, 0.2f));
+            flash.Play();
+            return;
+        }
+
+        CardCanBePlayed = false;
         hand.Remove(card);
         RefreshCardPositions();
 
