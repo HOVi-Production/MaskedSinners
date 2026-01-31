@@ -90,6 +90,8 @@ public class CardSystem : MonoBehaviour
         var card = Instantiate(cardPrefab, handContainer).GetComponent<Card>();
         card.transform.position = new Vector3(GetComponentInParent<RectTransform>().position.x, GetComponentInParent<RectTransform>().offsetMin.y, 0);
         card.OnCardSelected.AddListener(OnCardSelected);
+        card.type = type.Value;
+        card.SetImage();
         hand.Insert(hand.Count / 2, card);
 
         audioSource.PlayOneShot(audioSource.clip);

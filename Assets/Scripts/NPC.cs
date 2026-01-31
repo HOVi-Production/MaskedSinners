@@ -100,17 +100,12 @@ public class NPC : MonoBehaviour
     private void OnWritingDone()
     {
         writer.OnWritingDone.RemoveListener(OnWritingDone);
-
-        if(currentChallenge.asked)
-        {
-            return;
-        }
     }
 
     private void StartNextChallenge()
     {
         waitingForNextLine = false;
-        
+
         if(challenges.Count(c => c.passed) + (startChallenge.passed ? 1 : 0) >= correctAnswersRequired)
         {
             writer.Write(challengesPassedText);

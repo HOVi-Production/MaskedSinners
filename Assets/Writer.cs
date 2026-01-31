@@ -11,7 +11,7 @@ public class Writer : MonoBehaviour
  
     AudioSource audioSource;
 
-    void Start()
+    void Awake()
     {
         audioSource = GetComponent<AudioSource>();
     }

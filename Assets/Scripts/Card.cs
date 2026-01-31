@@ -1,6 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class Card : MonoBehaviour
     public UnityEvent<Card> OnCardSelected = new();
 
     AudioSource audioSource;
+
+    [SerializeField] Sprite mingleSprite;
+    [SerializeField] Sprite accuseSprite;
+    [SerializeField] Sprite provokeSprite;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +41,27 @@ public class Card : MonoBehaviour
     public void OMouseDown()
     {
         OnCardSelected.Invoke(this);
+    }
+
+    public void SetImage()
+    {
+        var image = transform.GetChild(0).GetComponent<Image>();
+        image.sprite = GetSprite(type);
+        
+    }
+
+    private Sprite GetSprite(CardType cardType)
+    {
+        switch (cardType)
+        {
+            case CardType.Accuse:
+                return accuseSprite;
+            case CardType.Provoke:
+                return provokeSprite;
+            case CardType.Mingle:
+                return mingleSprite;
+        }
+        return null;
     }
 }
 
