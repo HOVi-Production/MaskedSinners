@@ -2411,6 +2411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7654268144837720654, guid: 7613a8e350ed11949bd6d3237df0148e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6905287571339820714, guid: 5339f834c4f98c94aa597e9d8631b988, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3238,6 +3242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7974075967769147440, guid: 7613a8e350ed11949bd6d3237df0148e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6905287571339820714, guid: 5339f834c4f98c94aa597e9d8631b988, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
