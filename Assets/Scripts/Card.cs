@@ -45,7 +45,7 @@ public class Card : MonoBehaviour
 
     public void SetImage()
     {
-        var image = transform.GetChild(0).GetComponent<Image>();
+        var image = GetComponent<Image>();
         image.sprite = GetSprite(type);
         
     }
