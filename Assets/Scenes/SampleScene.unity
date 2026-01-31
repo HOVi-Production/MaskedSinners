@@ -1762,13 +1762,12 @@ PrefabInstance:
       objectReference: {fileID: 3769165006367798913, guid: 2154deea13291ce429a0202b526edccd, type: 3}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
-      value: I'm afraid that's all I know. Press [Space] to continue..
+      value: I'm afraid that's all I know.
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesPassedText
       value: If this is of any help to you, I did see Reyes slip out of the group
-        a little while before all of us noticed the bear missing.   Press [Space]
-        to continue..
+        a little while before all of us noticed the bear missing.
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.size
@@ -2237,6 +2236,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -65167762338206206, guid: 2154deea13291ce429a0202b526edccd, type: 3}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.Line
+      value: The bear must be after me
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
       value: ' I can''t trust any one here. All of you are out to get me! Press [Space]
         to continue..'
@@ -2259,28 +2262,76 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[6]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[7]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: 'allResponses.Array.data[9]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].Line
+      value: It must be hiding in the shadows
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].Line
+      value: They say the bears are noble. I dont trust that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].Line
-      value: 3rd question
+      value: Could it have gone to hibernate
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].Line
-      value: 3rd question
+      value: The shadows look to grow stronger.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.correctResponseText
+      value: Exactly! Why else would it have gone missing
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: startChallenge.incorrectResponseText
+      value: No no no! It's coming for me I know it
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].correctResponse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].correctResponseText
+      value: Yes, yes! We must stay in the light
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].correctResponseText
+      value: That's why they attack. We must stay safe
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].correctResponseText
-      value: myes
+      value: You're right, it hasn't. We must stay vigilant.
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].correctResponseText
-      value: myes
+      value: You are seeing it too!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[0].incorrectResponseText
+      value: The shadows hide evils. I won't dare look at them
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
+      propertyPath: challenges.Array.data[1].incorrectResponseText
+      value: No, the bear cant bring any honor. Only misfortune from the shadow
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[2].incorrectResponseText
-      value: no
+      value: You are trying to fool me, for the bear to catch me off guard.
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.data[3].incorrectResponseText
-      value: no
+      value: No, I cannot be seeing things
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: OnChallengePassed.m_PersistentCalls.m_Calls.Array.size
