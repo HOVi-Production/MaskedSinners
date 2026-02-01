@@ -45,6 +45,8 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!dialogContainer.activeInHierarchy)
+            return;
         if(Input.GetKeyDown(KeyCode.Space))
         {
             if(waitingForNextLine)
