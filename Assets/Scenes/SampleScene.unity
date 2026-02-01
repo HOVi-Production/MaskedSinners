@@ -464,13 +464,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
-      value: ' I don''t have any interest in talking to you any more. Go away. Press
-        [Space] to continue..'
+      value: ' I don''t have any interest in talking to you any more. Go away. '
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesPassedText
       value: Honestly, if I knew who stole that bear of yours that you so took from
-        under me I would steal it from them immediately. Press [Space] to continue..
+        under me I would steal it from them immediately.
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.size
@@ -916,12 +915,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
-      value: You really don't get it do you. Press [Space] to continue..
+      value: 'You really don''t get it do you. '
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesPassedText
       value: If you are looking for someone to blame I swear that Micah has always
-        been after that bear!  Press [Space] to continue..
+        been after that bear!
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.size
@@ -1186,13 +1185,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesFailedText
-      value: Sorry, I really don't think anyone here could've done it. Press [Space]
-        to continue..
+      value: 'Sorry, I really don''t think anyone here could''ve done it. '
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challengesPassedText
-      value: Barrett has been making my life miserable the whole evening. I really
-        don't know how he has the time.  Press [Space] to continue..
+      value: 'Barrett has been making my life miserable the whole evening. I really
+        don''t know how he has the time. '
       objectReference: {fileID: 0}
     - target: {fileID: 4991937823120954019, guid: 764e0be5fdb685040bdaeae03c411391, type: 3}
       propertyPath: challenges.Array.size
