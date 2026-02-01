@@ -236,16 +236,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1467c586c0cb34745ae57ef8207ce59b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutsceneText: '[YOU] have deemed yourself as good as an investigator as an hunter.
+  cutsceneText: '[YOU] have deemed yourself as good as an investigator as a hunter.
     That pesky thief Reyes will receive a severe punishment for their actions...
     But the celebration shall continue!
 
-    
 
-    [YOU] are lifted, and everyone
-    is chanting your name
 
-    
+    [YOU] are lifted, and everyone is
+    chanting your name
+
+
 
     Truly an epic victory royale!'
   writer: {fileID: 708942263}
